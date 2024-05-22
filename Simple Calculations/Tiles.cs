@@ -12,7 +12,7 @@ class TileCalculator
         double tileArea = tileWidth * tileHeight;
         double neededTiles = bathroomArea / tileArea;
         neededTiles *= 1.10;
-        int totalTiles = (int)Math.Ceiling(neededTiles);
+        int totalTiles = (int)Math.Round(neededTiles);
         Console.WriteLine($"{totalTiles}");
     }
 }
